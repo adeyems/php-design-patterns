@@ -1,0 +1,15 @@
+{
+  "name": "adeyems/php-design-pattern",
+  "type": "project",
+  "description": "Php Design Pattern",
+  "keywords": [
+    "design pattern",
+    "php pattern",
+    "php design pattern"
+  ],
+  "autoload": {
+    "psr-4": {
+      "Adeyems\\DesignPattern\\": "src/"
+    }
+  }
+}
