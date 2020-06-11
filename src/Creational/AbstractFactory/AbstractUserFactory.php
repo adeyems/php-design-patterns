@@ -1,10 +1,10 @@
 <?php
+
 declare(strict_types=1);
 
 namespace DesignPatterns\Creational\AbstractFactory;
 
-
-abstract class AbstractUser
+abstract class AbstractUserFactory
 {
-     public abstract function createAccount();
+    abstract public function createAccount();
 }
