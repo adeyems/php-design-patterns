@@ -1,23 +1,24 @@
 <?php
+declare(strict_types=1);
 
 namespace Adeyems\DesignPattern\Creational\Factory;
 
-class CouponTypeFactory
+class CouponHandlerFactory
 {
     const MONETARY_COUPON = 'monetary';
     const GIFT_COUPON = 'gift';
     const SHIPPING_COUPON = 'shipping';
 
 
-    public function getCouponType(string $type): CouponType {
+    public function getCouponHandler (string $type): CouponHandlerInterface {
         if ($type == self::MONETARY_COUPON)
-            return new MonetaryCoupon();
+            return new MonetaryCouponHandler();
 
         if ($type == self::GIFT_COUPON)
-            return new GiftCoupon();
+            return new GiftCouponHandler();
 
         if ($type == self::SHIPPING_COUPON)
-            return new ShippingCoupon();
+            return new ShippingCouponHandler();
 
         return null;
 

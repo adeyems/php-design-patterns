@@ -1,7 +1,14 @@
 {
-  "name": "adeyems/php-design-pattern",
+  "name": "adeyems/php-design-patterns",
   "type": "project",
-  "description": "Php Design Pattern",
+  "description": "Php Design Patterns",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Adeyemo Adeyems",
+      "email": "adeyems@gmail.com"
+    }
+  ],
   "keywords": [
     "design pattern",
     "php pattern",
@@ -9,7 +16,16 @@
   ],
   "autoload": {
     "psr-4": {
-      "Adeyems\\DesignPattern\\": "src/"
+      "DesignPatterns\\": "src/"
     }
+  },
+
+  "autoload-dev": {
+    "psr-4": {
+      "DesignPatterns\\Tests\\": "tests/"
+    }
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^9.2"
   }
 }
