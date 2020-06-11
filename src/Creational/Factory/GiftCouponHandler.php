@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace Adeyems\DesignPattern\Creational\Factory;
+namespace DesignPatterns\Creational\Factory;
 
 class GiftCouponHandler implements CouponHandlerInterface {
 

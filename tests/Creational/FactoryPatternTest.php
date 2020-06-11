@@ -1,12 +1,12 @@
 <?php
 declare(strict_types=1);
 
-namespace Tests\Creational;
+namespace DesignPatterns\Tests\Creational;
 
-use Adeyems\DesignPattern\Creational\Factory\CouponHandlerFactory;
-use Adeyems\DesignPattern\Creational\Factory\GiftCouponHandler;
-use Adeyems\DesignPattern\Creational\Factory\MonetaryCouponHandler;
-use Adeyems\DesignPattern\Creational\Factory\ShippingCouponHandler;
+use DesignPatterns\Creational\Factory\CouponHandlerFactory;
+use DesignPatterns\Creational\Factory\GiftCouponHandler;
+use DesignPatterns\Creational\Factory\MonetaryCouponHandler;
+use DesignPatterns\Creational\Factory\ShippingCouponHandler;
 use PHPUnit\Framework\TestCase;
 
 /**
