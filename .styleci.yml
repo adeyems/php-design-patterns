@@ -1,12 +1,11 @@
-php:
-  preset: recommended
-  risky: true
-  tab-width: 4
-  use-tabs: false
-  finder:
-    exclude:
-      - "modules"
-      - "node_modules"
-      - "storage"
-      - "vendor"
-    name: "*.php"
+preset: recommended
+risky: true
+tab-width: 4
+use-tabs: false
+finder:
+  exclude:
+    - "modules"
+    - "node_modules"
+    - "storage"
+    - "vendor"
+  name: "*.php"
