@@ -9,11 +9,13 @@ class AdminAccountFactory extends AbstractAccountFactory
 
     public function getAccount(string $accountType): Account
     {
-        if ($accountType === self::REGULAR_ADMIN)
+        if ($accountType === self::REGULAR_ADMIN) {
             return new RegularAdmin();
+        }
 
-        if ($accountType === self::SUPER_ADMIN)
+        if ($accountType === self::SUPER_ADMIN) {
             return new SuperAdmin();
+        }
 
         return null;
     }

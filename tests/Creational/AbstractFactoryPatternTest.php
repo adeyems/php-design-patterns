@@ -26,6 +26,7 @@ class AbstractFactoryPatternTest extends TestCase
 
     /**
      * @dataProvider accountFactoryProvider
+     *
      * @param AccountFactory $accountFactory
      */
     public function test_can_provide_account_factory_class(AccountFactory $accountFactory)
@@ -35,11 +36,11 @@ class AbstractFactoryPatternTest extends TestCase
 
         $adminAccountFactory = $accountFactory->getAccountFactory(true);
         $this->assertInstanceOf(AdminAccountFactory::class, $adminAccountFactory);
-
     }
 
     /**
      * @dataProvider accountFactoryProvider
+     *
      * @param AccountFactory $accountFactory
      */
     public function test_can_provide_class_from_factory_class(AccountFactory $accountFactory)
@@ -52,7 +53,6 @@ class AbstractFactoryPatternTest extends TestCase
         $premiumCustomerAccount = $customerAccountFactory->getAccount('premium');
         $this->assertSame('creating premium customer profile ...', $premiumCustomerAccount->create());
 
-
         $adminAccountFactory = $accountFactory->getAccountFactory(true);
 
         $regularAdminAccount = $adminAccountFactory->getAccount('regular');
@@ -60,6 +60,5 @@ class AbstractFactoryPatternTest extends TestCase
 
         $superAdminAccount = $adminAccountFactory->getAccount('super');
         $this->assertSame('creating super admin profile ...', $superAdminAccount->create());
-
     }
 }

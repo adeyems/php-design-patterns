@@ -9,11 +9,13 @@ class CustomerAccountFactory extends AbstractAccountFactory
 
     public function getAccount(string $accountType): Account
     {
-        if ($accountType === self::PREMIUM_CUSTOMER)
+        if ($accountType === self::PREMIUM_CUSTOMER) {
             return new PremiumCustomer();
+        }
 
-        if ($accountType === self::FREEMIUM_CUSTOMER)
+        if ($accountType === self::FREEMIUM_CUSTOMER) {
             return new FreemiumCustomer();
+        }
 
         return null;
     }
