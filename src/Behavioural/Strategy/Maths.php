@@ -1,8 +1,6 @@
 <?php
 
-
 namespace DesignPatterns\Behavioural\Strategy;
-
 
 class Maths
 {
@@ -13,8 +11,8 @@ class Maths
         $this->operation = $arithmetic;
     }
 
-    public function executeStrategy(float $x, float $y){
+    public function executeStrategy(float $x, float $y)
+    {
         return $this->operation->calculate($x, $y);
     }
-
 }
