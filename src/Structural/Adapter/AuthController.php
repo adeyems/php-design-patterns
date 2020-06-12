@@ -1,12 +1,9 @@
 <?php
 
-
 namespace DesignPatterns\Structural\Adapter;
-
 
 class AuthController
 {
-
     /**
      * @var LoginInterface
      */
@@ -17,7 +14,8 @@ class AuthController
         $this->loginType = $loginType;
     }
 
-    public function authenticate(string $email){
+    public function authenticate(string $email)
+    {
         return $this->loginType->login($email);
     }
 }

@@ -14,7 +14,6 @@ use PHPUnit\Framework\TestCase;
  */
 class AdapterPatternTest extends TestCase
 {
-
     public function test_it_can_login_with_any_login_interface()
     {
         $authController = new AuthController(new GoogleLoginAdapter(new GoogleLogin()));
