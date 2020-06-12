@@ -1,8 +1,6 @@
 <?php
 
-
 namespace DesignPatterns\Structural\Adapter;
-
 
 class GoogleLoginAdapter implements LoginInterface
 {
