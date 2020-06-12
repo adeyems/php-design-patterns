@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace DesignPatterns\Creational\AbstractFactory;
 
-abstract class AbstractUser
+interface Account
 {
-    abstract public function createAccount();
+    public function create(): string;
 }
