@@ -5,8 +5,8 @@ declare(strict_types=1);
 namespace DesignPatterns\Tests\Structural;
 
 use DesignPatterns\Structural\Decorator\PizzaOrder;
-use DesignPatterns\Structural\Decorator\PizzaWithExtraToppingsWithBoxOrder;
 use DesignPatterns\Structural\Decorator\PizzaWithExtraToppingsOrder;
+use DesignPatterns\Structural\Decorator\PizzaWithExtraToppingsWithBoxOrder;
 use PHPUnit\Framework\TestCase;
 
 /**

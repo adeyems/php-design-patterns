@@ -6,8 +6,8 @@ abstract class OrderDecorator implements Order
 {
     public Order $order;
 
-   public function __construct(Order $order)
-   {
-       $this->order = $order;
-   }
+    public function __construct(Order $order)
+    {
+        $this->order = $order;
+    }
 }
