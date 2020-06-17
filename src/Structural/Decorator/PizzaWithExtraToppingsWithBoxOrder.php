@@ -15,10 +15,10 @@ class PizzaWithExtraToppingsWithBoxOrder extends OrderDecorator
 
     public function getShippingFee(): float
     {
-        return $this->order->getShippingFee() + $this->box_shipping_price();
+        return $this->order->getShippingFee() + $this->getBoxShippingPrice();
     }
 
-    private function box_shipping_price(): float
+    private function getBoxShippingPrice(): float
     {
         return 10.5;
     }
